@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.138), rgba(255, 255, 255, 0.305)), url("images/main-page-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-attachment: fixed;
+}
+
+.navigation {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+}
+
+.navigation .box-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation .box-navigation img {
+  margin: 0px 0px 0px 25px;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 50px 50px 0px;
+  font-weight: 400;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li {
+  list-style-type: none;
+  margin-left: 40px;
+  text-shadow: 1px 1px 4px #000000;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.515);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.navigation .box-navigation .box:nth-child(2) ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.navigation .box-navigation .box:nth-child(2) input {
+  margin-top: -5px;
+  margin-left: 40px;
+  padding: 5px 0px 5px 5px;
+  justify-content: flex;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  opacity: 0.8;
+  border-color: white;
+}
+
+.navigation .box-navigation .box:nth-child(2) input:hover {
+  opacity: 1;
+}
+
+.navigation .box-navigation .box:nth-child(3) {
+  display: none;
+  margin: 0px 25px 0px 0px;
+}
+
+/*@media screen and (max-width: 990px) {
+    .navigation .box-navigation .box:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+    }
+
+    .navigation .box-navigation img {
+        margin: 5px 0px 0px 25px;
+    }
+
+    .navigation .box-navigation .box:nth-child(3) {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation .box-navigation .box:nth-child(3) i {
+        font-size: 28px;
+    }
+}*/
+
+/* Text Main */
+
+.main-text {
+  width: 90%;
+  margin: 100px 0px 50px 0px;
+  margin-inline: auto;
+}
+
+.textutama h2 {
+  width: 432px;
+  height: 134px;
+  left: 122px;
+  top: 348px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  color: #ffffff;
+  margin-left: 100px;
+}
+
+.paragraph-main {
+  margin: 0px 0px 0px 100px;
+}
+
+.paragraph-main p {
+  width: 571px;
+  height: 92px;
+  margin-left: 0px;
+  top: 482px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+
+.paragraph-main button {
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: rgba(217, 217, 217, 0.5);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.paragraph-main button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.learn {
+  margin: 20px 0px 0px 0px;
+}
+
+.learn-text {
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  display: center;
+  color: white;
+}
+
+/* Wawasan */
+
+.wawasan {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.wawasan .box-wawasan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.wawasan .box-wawasan .box:nth-child(2) {
+  font-size: 1.5vw;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+}
+
+.wawasan .box-wawasan .box:nth-child(2) h2 {
+  float: left;
+}
+
+.wawasan .box-wawasan .box:nth-child(2) p {
+  float: left;
+  margin: 0px 0px 0px 20px;
+  font-weight: 400;
+}
+
+/* Objek Wisata */
+
+.wisata {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.wisata .container h1 {
+  text-align: center;
+  font-size: xx-large;
+  margin: 0px 0px 50px 0px;
+}
+
+.wisata .box-wisata {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wisata .box-wisata .box {
+  width: fit-content;
+  height: 70vh;
+  text-align: center;
+  margin-inline: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 5px 5px #000000;
+}
+
+.wisata .box-wisata .box img,
+h2,
+p,
+button {
+  margin: 20px;
+}
+
+.wisata .box-wisata .box img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 5px 5px #000000;
+}
+
+.wisata .box-wisata .box button {
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.wisata .box-wisata .box button:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.booking-text {
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  display: center;
+  color: #ffffff;
+}
+
+/* Sarana Akomodasi */
+
+.akomodasi {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #14213d;
+}
+
+.akomodasi .kolom-akomodasi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 100px;
+}
+
+.akomodasi .container h1 {
+  text-align: center;
+  font-size: xx-large;
+  margin: 0px 0px 50px 0px;
+  color: white;
+}
+
+.akomodasi .kolom-akomodasi .kolom {
+  width: fit-content;
+  height: 70vh;
+  text-align: center;
+  background-color: #ffffff;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 5px 5px rgb(255, 255, 255), 10px 10px rgba(255, 255, 255, 0.771), 15px 15px rgba(255, 255, 255, 0.514);
+}
+
+.akomodasi .kolom-akomodasi .kolom h2 {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
+}
+
+.akomodasi .kolom-akomodasi .kolom .konten-akomodasi img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.akomodasi .kolom-akomodasi .kolom .konten-akomodasi i,
+button {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 20px;
+  text-shadow: 0.2px 1px 1px #000000;
+}
+
+.akomodasi .kolom-akomodasi .kolom .konten-akomodasi p {
+  width: 272px;
+  height: 80px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.akomodasi .kolom-akomodasi .kolom .konten-akomodasi button {
+  width: 150px;
+  height: 50px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.akomodasi .kolom-akomodasi .kolom .konten-akomodasi button:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.akomodasi .kolom-akomodasi .kolom .konten-akomodasi .book-now {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Kontak */
+
+.kontak {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(20, 33, 61);
+  background: linear-gradient(180deg, rgba(20, 33, 61, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+.kontak .sangkep {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.kontak .sangkep h3 {
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+}
+
+.kontak .sangkep iframe {
+  width: 400px;
+  height: 600px;
+  margin-left: 35px;
+}
+
+.kontak .sangkep form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 15px 30px 15px 30px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.kontak .sangkep form input {
+  padding: 15px 60px 15px 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.kontak .sangkep textarea {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.kontak .sangkep form input:focus {
+  outline: none !important;
+  border: 2px solid #fca311;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.kontak .sangkep textarea:focus {
+  outline: none !important;
+  border: 2px solid #fca311;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.kontak .sangkep .pesan {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.kontak .sangkep .nama {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.kontak .sangkep .email {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.kontak .sangkep .pesan {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.kontak .sangkep .tombol {
+  margin: 10px 0px 40px 0px;
+  padding: 15px 0px 15px 0px;
+  border-radius: 5px;
+  color: #14213d;
+  border-color: #fca311;
+  background-color: #fca311;
+  transition: all 0.3s ease;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.kontak .sangkep .tombol:hover {
+  color: #ffffff83;
+  background-color: #ffffff;
+}
+
+/* Footer */
+
+.footer .container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .row .footer-col ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #fca311;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
